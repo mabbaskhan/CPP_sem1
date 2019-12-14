@@ -1,0 +1,13 @@
+Steps:
+
+1. Git clone:
+	git clone respositoryURL
+
+2. 
+	a. git pull
+	a. Make changes to your project. 
+	b. git status
+	c. git add
+	c. git commit
+	d. git push
+	
