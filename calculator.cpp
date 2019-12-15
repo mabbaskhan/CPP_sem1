@@ -1,11 +1,12 @@
-#include<iostream.h>
+#include<iostream>
 using namespace std;
 int main()
 {
   int firstnumber, secondnumber, sumoftwonumbers;
   cout<<"enter two integers:";
-  cin>>first number>> second number;
+ std::cin>>firstnumber>> secondnumber;
   sumoftwonumbers=firstnumber+secondnumber;
   cout<<firstnumber<<"+"<<secondnumber<<"="<<sumoftwonumbers;
+  cout<<"\n";
   return 0;
 }
