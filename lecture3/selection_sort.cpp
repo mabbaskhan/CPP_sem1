@@ -52,7 +52,6 @@ int main() {
     cout<<"arr_b Elements: ";
     displayArrayElements(arr_b, n);
     cout<<"Sorting arr_b using Selection Sort algorithm: ";
-    bubbleSort(arr_b, n);
+    selectionSort(arr_b, n);
     displayArrayElements(arr_b, n);
-
 }
