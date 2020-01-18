@@ -23,16 +23,16 @@ void bubbleSort(int arr_a[], int n) {
 void selectionSort(int arr_b[], int n) {
     int min_index;
     int i, j;
-    for(i = 0; i < n; i++) {
+     for(i = 0; i < n; i++) {
         min_index = i;
-        for(j = 0; j < n; j++) {
+        for(j = i + 1; j < n; j++) {
             if(arr_b[j] < arr_b[min_index]) {
                 min_index = j;
             }
         }
-        int temp = arr_b[i];
-        arr_b[i] = arr_b[j];
-        arr_b[j] = temp;
+        int temp = arr_b[min_index];
+        arr_b[min_index] = arr_b[i];
+        arr_b[i] = temp;
     }
 }
 
