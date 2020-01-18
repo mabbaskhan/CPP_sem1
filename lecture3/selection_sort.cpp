@@ -26,7 +26,7 @@ void selectionSort(int arr_b[], int n) {
     for(i = 0; i < n; i++) {
         min_index = i;
         for(j = 0; j < n; j++) {
-            if(arr_b[j] > arr_b[min_index]) {
+            if(arr_b[j] < arr_b[min_index]) {
                 min_index = j;
             }
         }
