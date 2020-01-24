@@ -31,7 +31,7 @@ int main() {
     /**if (deviceId == 1) {
         cout<<"Fan is switched \n";
     } else if (deviceId == 2) {
-        cout<<"Computer is switched \n";
+        cout<<"Computer is switched \n"; 
     } else if (deviceId == 3) {
         cout<<"Mobile is switched \n";
     } else {
