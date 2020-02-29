@@ -5,9 +5,11 @@ using namespace std;
 class Student {
     public:
     string name;
+    int semester;
 
-    Student(string name) {
+    Student(string name, int semester) {
         this->name = name;
+        this->semester = semester;
     }
     void displayName() {
         cout<<name;
@@ -18,10 +20,16 @@ class Student {
         cout<<age<<endl;
     }
 
+    int getSemester() {
+        return semester;
+    }
+
 };
 
 int main() {
-    Student abbas("Abbas");
-    abbas.displayName();
-    abbas.displayAge(20);
+    Student object("Abbas", 2);
+    object.displayName();
+    object.displayAge(20);
+    cout<<object.getSemester();
+    cout<<endl;
 }
