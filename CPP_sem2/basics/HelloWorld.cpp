@@ -14,9 +14,14 @@ class Student {
         cout<<endl;
     }
 
+    void displayAge(int age) {
+        cout<<age<<endl;
+    }
+
 };
 
 int main() {
     Student abbas("Abbas");
     abbas.displayName();
+    abbas.displayAge(20);
 }
