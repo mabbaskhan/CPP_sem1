@@ -5,8 +5,9 @@ using namespace std;
 class Student {
     public:
     string name;
+    private:
     int semester;
-
+    public:
     Student(string name, int semester) {
         this->name = name;
         this->semester = semester;
@@ -20,8 +21,13 @@ class Student {
         cout<<age<<endl;
     }
 
-    int getSemester() {
-        return semester;
+    void setSemester(int sem) {
+        semester = sem;
+    }
+
+    void displyaSemester() {
+        cout<<semester;
+        cout<<endl;
     }
 
 };
@@ -30,6 +36,8 @@ int main() {
     Student object("Abbas", 2);
     object.displayName();
     object.displayAge(20);
-    cout<<object.getSemester();
-    cout<<endl;
+    object.displyaSemester();
+
+    object.setSemester(4);
+    object.displyaSemester();
 }
