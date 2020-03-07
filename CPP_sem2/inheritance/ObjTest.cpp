@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
 
-int a = 20;
-
 class ObjTest {
     public: 
     string name;
@@ -14,12 +12,19 @@ class ObjTest {
 
     void printObj() {
         cout<<name << endl;
-        cout << a + a << endl;
+        cout << a << endl;
+        int b = 20;
+    }
+
+    void printObj2() {
+        cout << b;
     }
 };
 
 
 int main() {
     ObjTest obj("Test Object");
+    obj.printObj();
+    obj.a = 20;
     obj.printObj();
 }
