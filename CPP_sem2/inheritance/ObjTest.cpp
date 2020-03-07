@@ -6,6 +6,10 @@ class ObjTest {
     string name;
     int a = 10;
     
+    ObjTest() {
+
+    }
+    
     ObjTest(string name) {
         this->name = name;
     }
@@ -17,7 +21,7 @@ class ObjTest {
     }
 
     void printObj2() {
-        cout << b;
+        cout<< a;
     }
 };
 
@@ -27,4 +31,5 @@ int main() {
     obj.printObj();
     obj.a = 20;
     obj.printObj();
+    obj.printObj2();
 }
