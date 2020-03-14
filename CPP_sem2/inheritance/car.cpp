@@ -5,12 +5,14 @@ class Car {
     public:
     string company, model, fuel;
     int year, price;
+    static int numberOfCars;
     
     Car(string company, string model, int year, string fuel) {
         this->company = company;
         this->model = model;
         this->year = year;
         this->fuel = fuel;
+        numberOfCars++;
     }
 
     //Polymorphism: Method overriding:
@@ -21,10 +23,11 @@ class Car {
     }
 
     void printCar() {
-        cout<<">> Company: " << company << ", Model: " << model << ", Year: " << year << ", Fuel: " << fuel << ", Price: " << price;        
+        cout<<">> Company: " << company << ", Model: " << model << ", Year: " << year << ", Fuel: " << fuel << ", Price: " << price;
     }
 };
 
+int Car::numberOfCars = 0;
 
 class Toyota: public Car {
     public:
@@ -41,6 +44,7 @@ class Toyota: public Car {
     public:
     void printUniqueProperty() {
         cout << ", Unique Property: " << uniqueProperty << endl;
+        cout<<">> Number of Cars: " << numberOfCars << endl;
     }
 };
 
@@ -59,6 +63,7 @@ class Tesla: public Car {
     public:
     void printUniqueProperty() {
         cout << ", Unique Property: " << uniqueProperty << endl;
+        cout<<">> Number of Cars: " << numberOfCars << endl;
     }
 };
 
