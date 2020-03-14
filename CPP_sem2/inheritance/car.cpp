@@ -5,6 +5,8 @@ class Car {
     public:
     string company, model, fuel;
     int year, price;
+
+    //static variable: Shared by all class instances.
     static int numberOfCars;
     
     Car(string company, string model, int year, string fuel) {
