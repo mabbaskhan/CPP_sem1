@@ -80,4 +80,6 @@ int main() {
     tesla.setPrice(2000000);
     tesla.printCar();
     tesla.printUniqueProperty();
+
+    toyota.printUniqueProperty();
 }
