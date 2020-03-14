@@ -14,6 +14,7 @@ class Car {
     }
 
     //Polymorphism: Method overriding:
+    // A function defined by base class and redefined by child classes using there own values.
 
     void setPrice(int price) {
         this->price = price;
